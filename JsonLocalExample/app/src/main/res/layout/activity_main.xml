@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/edtNota"
         android:hint="Nota:"
-        android:inputType="text"
+        android:inputType="numberDecimal"
         android:autofillHints="a">
 
     </EditText>
@@ -67,7 +67,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/btnConsumir"
-            android:onClick="abrirtela">
+            android:onClick="abrirtela"
+            android:text="Consumir">
 
         </Button>
 
