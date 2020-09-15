@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtAluno"
+        android:hint="Aluno:"
+        android:inputType="text"
+        android:autofillHints="a">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtDisciplina"
+        android:hint="Disciplina:"
+        android:inputType="text"
+        android:autofillHints="a">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNota"
+        android:hint="Nota:"
+        android:inputType="text"
+        android:autofillHints="a">
+
+    </EditText>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnAdicionar"
+            android:text="Cadastrar"
+            android:onClick="criarLista">
+
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnGerar"
+            android:text="Gerar JSON"
+            android:onClick="gerarJson">
+
+        </Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnConsumir"
+            android:onClick="abrirtela">
+
+        </Button>
+
+    </TableRow>
+</LinearLayout>
+<TextView
+    android:id="@+id/txtResultado"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Resultado">
+
+</TextView>
+
+</LinearLayout>
